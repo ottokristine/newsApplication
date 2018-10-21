@@ -20,17 +20,24 @@ class APIRequests {
     
     let everything = "everything?"
     let topHeadlines = "top-headlines?"
+    let technologyNewsString = "category=technology"
+    
+    let sortByDate = "&sortBy"
     
     var defaultNewsStories: String {
-        return (baseURL + everything + privacyFilter + "&" + key)
+        return (baseURL + everything + privacyFilter + sortByDate + "&" + key)
     }
     
     var topHeadLinesStories: String {
-        //return (baseURL + topHeadlines +  "country=us&" + key)
-        return "https://newsapi.org/v2/top-headlines?country=us&apiKey=7b18b8681b844224b6284e1f4b32bf64"
+        return (baseURL + topHeadlines +  "country=us" + sortByDate + "&" + key)
+        //return "https://newsapi.org/v2/top-headlines?country=us&apiKey=7b18b8681b844224b6284e1f4b32bf64"
     }
     
     var businessStories: String {
-        return (baseURL + topHeadlines + categoryFilter + key)
+        return (baseURL + topHeadlines + categoryFilter + sortByDate + key)
+    }
+    
+    var technologyNews: String {
+        return (baseURL + topHeadlines + technologyNewsString + "&country=us" + "&" + key)
     }
 }

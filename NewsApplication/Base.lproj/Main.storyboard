@@ -26,7 +26,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU7-sr-Uq8">
-                                            <rect key="frame" x="136" y="10" width="215" height="47"/>
+                                            <rect key="frame" x="136" y="10" width="225" height="47"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -39,7 +39,7 @@
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="vBE-fK-DuZ"/>
                                             </constraints>
                                         </imageView>
-                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysY-VU-y3q">
+                                        <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysY-VU-y3q">
                                             <rect key="frame" x="136" y="56" width="210" height="49"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="49" id="0fm-92-koh"/>
@@ -49,7 +49,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="We5-Px-GJB">
-                                            <rect key="frame" x="135" y="106" width="214" height="12"/>
+                                            <rect key="frame" x="135" y="106" width="226" height="12"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="226" id="HST-QA-ZmK"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="214" id="vBs-8b-kgB"/>
@@ -64,17 +64,17 @@
                                         <constraint firstItem="meP-Ig-1TC" firstAttribute="leading" secondItem="wBW-H2-lKj" secondAttribute="leadingMargin" constant="-11" id="6LX-Tb-Tnt"/>
                                         <constraint firstItem="ysY-VU-y3q" firstAttribute="leading" secondItem="KU7-sr-Uq8" secondAttribute="leading" id="9LV-Ww-lQF"/>
                                         <constraint firstItem="meP-Ig-1TC" firstAttribute="top" secondItem="wBW-H2-lKj" secondAttribute="topMargin" id="DGN-NN-dgU"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="KU7-sr-Uq8" secondAttribute="trailing" constant="-7" id="HI9-a3-bvU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="KU7-sr-Uq8" secondAttribute="trailing" constant="-2" id="HI9-a3-bvU"/>
                                         <constraint firstAttribute="bottom" secondItem="meP-Ig-1TC" secondAttribute="bottom" constant="46.5" id="NKB-0s-QP3"/>
                                         <constraint firstItem="KU7-sr-Uq8" firstAttribute="top" secondItem="wBW-H2-lKj" secondAttribute="topMargin" constant="-1" id="Tsq-ba-7ha"/>
                                         <constraint firstItem="ysY-VU-y3q" firstAttribute="bottom" secondItem="meP-Ig-1TC" secondAttribute="bottom" constant="-15" id="Y3t-qc-3pD"/>
-                                        <constraint firstItem="We5-Px-GJB" firstAttribute="trailing" secondItem="wBW-H2-lKj" secondAttribute="trailingMargin" constant="5" id="dlx-G5-lLu"/>
+                                        <constraint firstItem="We5-Px-GJB" firstAttribute="trailing" secondItem="wBW-H2-lKj" secondAttribute="trailingMargin" constant="2" id="dlx-G5-lLu"/>
                                         <constraint firstItem="KU7-sr-Uq8" firstAttribute="leading" secondItem="meP-Ig-1TC" secondAttribute="trailing" constant="3" id="eau-db-lep"/>
                                         <constraint firstItem="ysY-VU-y3q" firstAttribute="top" secondItem="KU7-sr-Uq8" secondAttribute="bottom" constant="-1" id="jmd-lW-vKd"/>
                                         <constraint firstItem="We5-Px-GJB" firstAttribute="top" secondItem="ysY-VU-y3q" secondAttribute="bottom" constant="1" id="ke3-my-H6D"/>
                                         <constraint firstItem="We5-Px-GJB" firstAttribute="top" secondItem="wBW-H2-lKj" secondAttribute="top" constant="106" id="mi3-R2-SlW"/>
                                         <constraint firstItem="We5-Px-GJB" firstAttribute="leading" secondItem="meP-Ig-1TC" secondAttribute="trailing" constant="2" id="nPj-5M-5Gl"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="We5-Px-GJB" secondAttribute="trailing" constant="10" id="ur9-Sr-8IK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="We5-Px-GJB" secondAttribute="trailing" constant="-2" id="ur9-Sr-8IK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -91,18 +91,24 @@
                         </connections>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem title="Top Articles" width="137" id="TJW-om-vsu">
+                        <barButtonItem title="Top Articles" width="132" id="TJW-om-vsu">
                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="highestRatedButton_Tap:" destination="eGV-Vh-X7s" id="aeY-ZS-u9R"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Privacy" width="121" id="0wW-yT-E1p">
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="B1a-be-VMN"/>
+                        <barButtonItem title="Privacy" width="132" id="0wW-yT-E1p">
                             <connections>
                                 <action selector="privacyNews_tap:" destination="eGV-Vh-X7s" id="4nm-ym-Y4K"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem title="Item" width="132" id="pMC-hI-013"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="RuL-Q7-5Bm"/>
+                        <barButtonItem title="Technology " width="132" id="pMC-hI-013">
+                            <connections>
+                                <action selector="technologyButton_Tap:" destination="eGV-Vh-X7s" id="G7c-1x-bZ2"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Privacy News" id="p6L-Lr-yhs"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>

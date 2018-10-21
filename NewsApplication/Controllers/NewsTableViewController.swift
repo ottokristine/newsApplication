@@ -80,4 +80,15 @@ class NewsTableViewController: UITableViewController {
             })
         }
     }
+    @IBAction func technologyButton_Tap(_ sender: Any) {
+        spinner.startAnimating()
+        if let url = URL(string: APIRequests.sharedInstance.technologyNews) {
+            APIRequestManager.sharedInstance.MakeAPICall(url: url, completion: {
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                    self.spinner.stopAnimating()
+                }
+            })
+    }
+}
 }
